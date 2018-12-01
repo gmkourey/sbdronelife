@@ -13,16 +13,20 @@
     margin-left:10px;
     text-align:center;
 }
+.jumbotron {
+    background-size: cover;
+    margin-bottom:0px;
+}
 #videoContainer {
     padding: 0px;
     position: relative;
     height:85vh;
     overflow:hidden;
 }
-#video {
-    width: 100%;
+video {
     position:absolute;
     top:-200px;
+    object-fit: fill;
 }
 .overlay {
     position: absolute;
@@ -35,20 +39,42 @@
     left:15vw;
     border: solid 1.5px rgb(100,100,100);
 }
+.whoWeAre {
+    text-align:center;
+    /* margin-top: 0px; */
+}
+.whoWeAre h2 {
+    margin: 0 auto;
+}
+#FAA {
+    padding: 30px 75px 30px 75px;
+    margin-top:25px;
+}
+#compDescription {
+    margin-top:0px;
+    padding:25px;
+    background-color:#F0F0F0;
+}
+.faaLicensed {
+    display:flex;
+    align-items: center;
+    text-align:center;
+    padding:50px;
+}
+.faaImage {
+    text-align:center;
+}
 
 @media (max-width: 991px) {
     .navbar-nav {
         position: static;
     }
-    video {
-        display:none;
+    #FAA {
+        padding-right: 0px;
+        padding-left: 0px;
     }
-    #videoContainer {
-        background-image: url('../images/pexels-photo-257360.jpeg');
-        background-size: cover;
-        background-position-y: 20%; 
-    }
-    overlay {
-        position:static;
+    .faaLicensed {
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }

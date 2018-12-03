@@ -11,5 +11,5 @@ $(".navbar-toggler").on("click", function () {
         const changeInNavHeight = $("#header").height() - navOriginalSize;
         const newTop = (parseInt(topOverlayAlignment) + parseInt(changeInNavHeight)) + "px";
         $(".overlay").css("top", newTop);
-    }, 250)
+    }, 350)
 })

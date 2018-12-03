@@ -250,7 +250,7 @@ a:hover {
 
 @media (max-width: 376px) {
     #videoContainer {
-        height: 25vh;
+        height: 30vh;
     }
     .photoCover {
         height: 22vh;
@@ -263,6 +263,7 @@ a:hover {
     }
     .overlay h3 {
         font-size: 10px;
+        margin-bottom: 0px;
     }
     .btn-primary {
         font-size: 12px;

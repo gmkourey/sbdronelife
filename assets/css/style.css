@@ -16,6 +16,7 @@
 .jumbotron {
     background-size: cover;
     margin-bottom:0px;
+    border-radius: 0px;
 }
 #videoContainer {
     padding: 0px;
@@ -27,6 +28,7 @@ video {
     position:absolute;
     top:-200px;
     object-fit: fill;
+    width: 100vw;
 }
 .overlay {
     position: absolute;
@@ -40,16 +42,15 @@ video {
     margin: 0 auto;
     border: solid 1.5px rgb(100,100,100);
 }
-
-video {
-    width: 100vw;
-}
 .faaLogo {
-    height: 150px;
+    height: 125px;
 }
 .whoWeAre {
     text-align:center;
     /* margin-top: 0px; */
+}
+.contactForm {
+    margin-bottom: 25px;
 }
 .whoWeAre h2 {
     margin: 0 auto;
@@ -61,16 +62,23 @@ video {
 #compDescription {
     margin-top:0px;
     padding:25px;
-    background-color: rgba(230,230,230,0.9);
+    background-color: rgba(245,245,245,0.9);
 }
 
 .btn-light {
-    border-radius:10px !important;
     font-size: 16px !important;
     padding: 12px;
     background-color: rgb(146,220,150) !important;
     border: solid 1px rgb(146,220,150) !important;
     color: white !important;
+}
+.btn-primary {
+    color: white !important;
+    background-color: rgb(146,220,150) !important;
+    border: solid 1px rgb(146,220,150) !important;
+}
+.card-img-top {
+    height: 16vw;
 }
 .faaLicensed {
     display:flex;
@@ -81,13 +89,14 @@ video {
 .faaImage {
     text-align:center;
 }
-
+.sampleVideos {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
 iframe {
     width: 100vw;
     height: 90vh;
-}
-.jumbotron {
-    border-radius: 0px;
 }
 .whatwedo {
     text-align:center;
@@ -123,6 +132,11 @@ a:hover {
     margin-bottom: 0px;
     padding: 3px;
 }
+.servicesRow {
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
 #footer {
     text-align:center;
     background-color: rgb(146,220,150);

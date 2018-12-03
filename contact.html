@@ -24,13 +24,13 @@
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="services.html">Services Offered</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact Now</a>
                           </li>
                       </ul>
@@ -38,49 +38,31 @@
                   </nav>
             </div>
         </div>
-        <div class="jumbotron" id='videoContainer'>
-            <video autoplay loop>
-                <source src="./assets/images/Pexels Videos 1244994.mp4">
-              </video>
-            <div class="container">
-            <div class="overlay">
-                <h2 class="display-4">SB Drone Life</h2>
-                <h3>Nationally Recognized Drone Videography and Photography Agency</h3>
-                <a href="services.html"><button class="btn btn-light mt-4">Learn More</button></a>
-            </div>
+        <div class="container">
+            <h2 class="text-center mt-3">Want to make a booking? Questions? Contact us now!</h2>
+            <form class="contactForm" method="POST" action="https://formspree.io/grant.kourey@gmail.com">
+                    <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="First Name">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Last Name">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              </div>
+                    <div class="form-group">
+                      <label for="userEmail">Email address</label>
+                      <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea">Please let us know how we can help</label>
+                      <textarea class="form-control" id="textArea"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
         </div>
-        </div>
-        <div class="container-fluid" id="compDescription">
-            <div class="container">
-                <div class="row whoWeAre">
-                        <div class="col-md-3">
-                            <img class="faaLogo" src="assets/images/FAA Logo.png"/>
-                        </div>
-                        <div class="col-md-9">
-                <h2>Who We Are</h2> 
-                <p>SB Drone Life is an FAA exempt aerial videography comapny based in the Bay Area, CA. We specialize in full service video production, incorporating a diverse range of 
-                     videography and photography. Our team produces professional grade cinematography by combining aerial and ground footage, using state of the art technology.</p>
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <div class="container whatwedo">
-                    <h2>What We Do</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="assets/images/wedding-photo.jpg" class="photoCover"/>
-                            <h4 class="photoCoverOverlay">Weddings</h4>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/real-estate.jpg" class="photoCover"/>
-                            <h4 class="photoCoverOverlay">Real Estate</h4>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/promo-events.jpg" class="photoCover"/>
-                            <h4 class="photoCoverOverlay">Promotional Events</h4>
-                        </div>
-                    </div>
-                </div>
                 <div id="footer" class="container-fluid">
                     <div class="social">
                             <a href="https://www.instagram.com/sbdronelife/" target="_blank"><i class="fab fa-instagram"></i><span class="follow-request"> Follow Us On Instagram!</span></a>

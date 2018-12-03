@@ -20,12 +20,12 @@
 }
 #videoContainer {
     padding: 0px;
-    position: relative;
+    /* position: relative; */
     height:85vh;
     overflow:hidden;
 }
 video {
-    position:absolute;
+    position:relative;
     top:-200px;
     object-fit: fill;
     width: 100vw;
@@ -37,8 +37,8 @@ video {
     color:white;
     padding: 50px 30px;
     border-radius: 5px;
-    top: 5vw;
-    left:5vw;
+    top: 15vw;
+    left:10vw;
     margin: 0 auto;
     border: solid 1.5px rgb(100,100,100);
 }
@@ -94,6 +94,9 @@ video {
     height: 300px;
     margin: 0 auto;
 }
+.mbl-header {
+    display: none;
+}
 iframe {
     width: 100vw;
     height: 90vh;
@@ -110,9 +113,9 @@ iframe {
     margin-top: 10px;
 }
 .photoCover {
-    width: 20vw;
+    width: 100%;
+    height: 25vh;   
     margin: 0 auto;
-    height: 13vw;
 }
 .follow-request {
     position: relative;
@@ -126,8 +129,8 @@ a:hover {
 .photoCoverOverlay {
     background-color: rgba(256,256,256,0.9);
     text-align:center;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: 40px;
     width: 100%;
     margin-bottom: 0px;
     padding: 3px;
@@ -135,6 +138,9 @@ a:hover {
 .servicesRow {
     padding: 15px;
     margin-bottom: 25px;
+}
+.whatwedo h2 {
+    margin-bottom: 20px;
 }
 
 #footer {
@@ -146,7 +152,22 @@ a:hover {
     margin-bottom: 0px;
     color:white;
 }
-
+@media (max-width: 1367px) {
+    #videoContainer {
+        height: initial;
+    }
+    video {
+        top: 0px;
+    }
+}
+@media (max-width: 1025px) and (orientation: portrait) {
+    .photoCover {
+        height: 16vh;
+    }
+    .overlay h3 {
+        font-size: 20px;
+    }
+}
 @media (max-width: 991px) {
     .navbar-nav {
         position: static;
@@ -158,5 +179,95 @@ a:hover {
     .faaLicensed {
         padding-right: 0px;
         padding-left: 0px;
+    }
+}
+
+@media (max-width: 813px) {
+    .overlay .display-4 {
+        font-size: 35px;
+    }
+    .overlay h3 {
+        font-size: 25px; 
+    }
+    .overlay {
+        padding: 20px;
+    }
+    .btn-light {
+        padding: 10px;
+    }
+    .photoCover {
+        height: 35vh;
+    }
+}
+@media (max-width: 769px) {
+    .display-4 {
+        font-size: 40px;
+    }
+    .overlay {
+        top: 175px;
+    }
+    .photoCover {
+        height: 20vh;
+    }
+
+}
+
+@media (max-width: 668px) {
+    .display-4 {
+        font-size: 30px;
+    }
+    .overlay h3 {
+        font-size: 12px;
+    }
+    .btn-light {
+    font-size: 12px !important;
+    padding: 5px;
+    }
+    .video {
+        height: 100px;
+        top: -100px;
+    }
+    .photoCover {
+        height: 50vh;
+        width: 60vw;
+    }
+    #videoContainer {
+        height: 80vh;
+    }
+    .faaLogo {
+        display: none;
+    }
+    .overlay {
+        padding: 10px;
+    }
+    .card-img-top {
+        height: 50vh;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    #videoContainer {
+        height: initial;
+    }
+    .photoCover {
+        height: 22vh;
+    }
+    .overlay .display-4 {
+        font-size: 14px;
+    }
+    .overlay {
+        top: 125px;
+    }
+    .overlay h3 {
+        font-size: 10px;
+    }
+    .btn-primary {
+        font-size: 12px;
+    }
+    .card-img-top {
+        height: 35vh;
     }
 }

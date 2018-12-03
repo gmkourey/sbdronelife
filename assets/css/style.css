@@ -232,7 +232,7 @@ a:hover {
         width: 60vw;
     }
     #videoContainer {
-        height: 80vh;
+        height: 78vh;
     }
     .faaLogo {
         display: none;
@@ -250,7 +250,7 @@ a:hover {
 
 @media (max-width: 376px) {
     #videoContainer {
-        height: initial;
+        height: 25vh;
     }
     .photoCover {
         height: 22vh;

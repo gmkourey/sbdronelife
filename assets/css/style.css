@@ -2,34 +2,41 @@
     background-color: white;
     border-bottom: 1.5px solid lightgrey;
 }
+
 #logo {
     height: 80px;
 }
+
 .navbar-nav {
     position:absolute;
     right: 0px;
 }
+
 .nav-link {
     margin-left:10px;
     text-align:center;
 }
+
 .jumbotron {
     background-size: cover;
     margin-bottom:0px;
     border-radius: 0px;
 }
+
 #videoContainer {
     padding: 0px;
     /* position: relative; */
     height:85vh;
     overflow:hidden;
 }
+
 video {
     position:relative;
     top:-200px;
     object-fit: fill;
     width: 100vw;
 }
+
 .overlay {
     position: absolute;
     width: 40vw;
@@ -42,23 +49,28 @@ video {
     margin: 0 auto;
     border: solid 1.5px rgb(100,100,100);
 }
+
 .faaLogo {
     height: 125px;
 }
+
 .whoWeAre {
     text-align:center;
-    /* margin-top: 0px; */
 }
+
 .contactForm {
     margin-bottom: 25px;
 }
+
 .whoWeAre h2 {
     margin: 0 auto;
 }
+
 #FAA {
     padding: 30px 75px 30px 75px;
     margin-top:25px;
 }
+
 #compDescription {
     margin-top:0px;
     padding:25px;
@@ -72,60 +84,70 @@ video {
     border: solid 1px rgb(146,220,150) !important;
     color: white !important;
 }
+
 .btn-primary {
     color: white !important;
     background-color: rgb(146,220,150) !important;
     border: solid 1px rgb(146,220,150) !important;
 }
+
 .card-img-top {
     height: 16vw;
 }
+
 .faaLicensed {
     display:flex;
     align-items: center;
     text-align:center;
     padding:50px;
 }
+
 .faaImage {
     text-align:center;
 }
+
 .sampleVideos {
     width: 100%;
     height: 300px;
     margin: 0 auto;
 }
-.mbl-header {
-    display: none;
-}
+
 iframe {
     width: 100vw;
     height: 90vh;
 }
+
 .whatwedo {
     text-align:center;
     padding: 20px;
 }
+
 .fab {
     font-size: 30px;
     color:white;
 }
+
 .social {
     margin-top: 10px;
 }
+
 .photoCover {
     width: 100%;
     height: 25vh;   
     margin: 0 auto;
 }
+
 .follow-request {
     position: relative;
     bottom: 6px;
     color:white;
     margin-left: 5px;
 }
+
 a:hover {
     text-decoration: none !important;
 }
+
 .photoCoverOverlay {
     background-color: rgba(256,256,256,0.9);
     text-align:center;
@@ -135,10 +157,12 @@ a:hover {
     margin-bottom: 0px;
     padding: 3px;
 }
+
 .servicesRow {
     padding: 15px;
     margin-bottom: 25px;
 }
+
 .whatwedo h2 {
     margin-bottom: 20px;
 }
@@ -148,101 +172,167 @@ a:hover {
     background-color: rgb(146,220,150);
     padding: 15px 0px;
 }
+
 #footer p {
     margin-bottom: 0px;
     color:white;
 }
+
 @media (max-width: 1367px) {
     #videoContainer {
-        height: initial;
+        height: 60vh;
     }
+
     video {
-        top: 0px;
+        top: -100px;
     }
 }
+
 @media (max-width: 1025px) and (orientation: portrait) {
     .photoCover {
         height: 16vh;
     }
+
     .overlay h3 {
         font-size: 20px;
     }
+
+    #videoContainer {
+        height: 38vh;
+    }
+
+    video {
+        top: 0;
+    }
 }
+
+@media (max-width: 1025px) and (orientation: landscape) {
+    #videoContainer {
+        height: 60vh;
+    }
+}
+
 @media (max-width: 991px) {
     .navbar-nav {
         position: static;
     }
+
     #FAA {
         padding-right: 0px;
         padding-left: 0px;
     }
+
     .faaLicensed {
         padding-right: 0px;
         padding-left: 0px;
     }
+
+    #videoContainer {
+        height: 75vh;
+    }
+
+    .overlay .display-4 {
+        font-size: 20px;
+    }
+
+    .overlay h3 {
+        font-size: 15px;
+    }
+
+    .btn-light {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .overlay {
+        padding: 10px;
+    }
 }
 
-@media (max-width: 813px) {
+@media (max-width: 813px) and (max-width: 376) {
+    #videoContainer {
+        height: 100vh;
+    }
+
     .overlay .display-4 {
         font-size: 35px;
     }
+
     .overlay h3 {
         font-size: 25px; 
     }
+
     .overlay {
         padding: 20px;
+        background-color: blue;
     }
+
     .btn-light {
         padding: 10px;
     }
+
     .photoCover {
         height: 35vh;
     }
 }
+
 @media (max-width: 769px) {
     .display-4 {
         font-size: 40px;
     }
+
     .overlay {
         top: 175px;
     }
+
     .photoCover {
         height: 20vh;
     }
 
+    #videoContainer {
+        height: 37vh;
+    }
 }
 
 @media (max-width: 668px) {
     .display-4 {
         font-size: 30px;
     }
+
     .overlay h3 {
         font-size: 12px;
     }
+
     .btn-light {
     font-size: 12px !important;
     padding: 5px;
     }
+
     .video {
-        height: 100px;
-        top: -100px;
+        top: 0px;
     }
+
     .photoCover {
         height: 50vh;
         width: 60vw;
     }
+
     #videoContainer {
         height: 78vh;
     }
+
     .faaLogo {
         display: none;
     }
+
     .overlay {
         padding: 10px;
     }
+
     .card-img-top {
         height: 50vh;
     }
+
     .card {
         margin-bottom: 20px;
     }
@@ -250,24 +340,30 @@ a:hover {
 
 @media (max-width: 376px) {
     #videoContainer {
-        height: 30vh;
+        height: 25vh;
     }
+
     .photoCover {
         height: 22vh;
     }
+
     .overlay .display-4 {
         font-size: 14px;
     }
+
     .overlay {
         top: 125px;
     }
+
     .overlay h3 {
         font-size: 10px;
         margin-bottom: 0px;
     }
+
     .btn-primary {
         font-size: 12px;
     }
+    
     .card-img-top {
         height: 35vh;
     }

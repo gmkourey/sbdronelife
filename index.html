@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <!-- Navbar and Header -->
         <div class="container-fluid" id="header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -35,13 +36,14 @@
                           </li>
                       </ul>
                     </div>
-                  </nav>
+                </nav>
             </div>
         </div>
+        <!-- Body -->
         <div class="jumbotron" id='videoContainer'>
             <video autoplay loop>
                 <source src="./assets/images/Pexels Videos 1244994.mp4">
-              </video>
+            </video>
             <div class="overlay">
                 <h2 class="display-4">SB Drone Life</h2>
                 <h3>Nationally Recognized Drone Videography and Photography</h3>
@@ -51,52 +53,55 @@
         <div class="container-fluid" id="compDescription">
             <div class="container">
                 <div class="row whoWeAre">
-                        <div class="col-md-3">
-                            <img class="faaLogo" src="assets/images/FAA Logo.png"/>
-                        </div>
-                        <div class="col-md-9">
-                <h2 class="std-header">Who We Are</h2> 
-                <p>SB Drone Life is an FAA exempt aerial videography comapny based in the Bay Area, CA. We specialize in full service video production, incorporating a diverse range of 
-                     videography and photography. Our team produces professional grade cinematography by combining aerial and ground footage, using state of the art technology.</p>
+                    <div class="col-md-3">
+                        <img class="faaLogo" src="assets/images/FAA Logo.png"/>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="std-header">Who We Are</h2> 
+                        <p>SB Drone Life is an FAA exempt aerial videography comapny based in the Bay Area, CA. We specialize in full service video production, incorporating a diverse range of 
+                            videography and photography. Our team produces professional grade cinematography by combining aerial and ground footage, using state of the art technology.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container whatwedo">
+            <h2>What We Do</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div style="display:inline-block">
+                        <img src="assets/images/wedding-photo.jpg" class="photoCover"/>
+                        <h4 class="photoCoverOverlay">Weddings</h4>
                     </div>
                 </div>
-                <div class="container whatwedo">
-                    <h2>What We Do</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                                <div style="display:inline-block">
-                            <img src="assets/images/wedding-photo.jpg" class="photoCover"/>
-                            <h4 class="photoCoverOverlay">Weddings</h4>
-                        </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div style="display:inline-block">
-                            <img src="assets/images/real-estate.jpg" class="photoCover">
-                            <h4 class="photoCoverOverlay">Real Estate</h4>
-                        </div>
-                        </div>
-                        <div class="col-md-4">
-                                <div style="display:inline-block">
-                            <img src="assets/images/promo-events.jpg" class="photoCover"/>
-                            <h4 class="photoCoverOverlay">Promotional</h4>
-                        </div>
-                        </div>
+                <div class="col-md-4">
+                    <div style="display:inline-block">
+                        <img src="assets/images/real-estate.jpg" class="photoCover">
+                        <h4 class="photoCoverOverlay">Real Estate</h4>
                     </div>
                 </div>
-                <div id="footer" class="container-fluid">
-                    <div class="social">
-                            <a href="https://www.instagram.com/sbdronelife/" target="_blank"><i class="fab fa-instagram"></i><span class="follow-request"> Follow Us On Instagram!</span></a>
-                    </div>
-                    <div class="branding">
-                        <p>SBDroneLife&copy;</p>
+                <div class="col-md-4">
+                    <div style="display:inline-block">
+                        <img src="assets/images/promo-events.jpg" class="photoCover"/>
+                        <h4 class="photoCoverOverlay">Promotional</h4>
                     </div>
                 </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-                <script src="assets/scripts/overlayMove.js"></script>
-                <script src="assets/scripts/index.js"></script>
-        </body>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer" class="container-fluid">
+            <div class="social">
+                <a href="https://www.instagram.com/sbdronelife/" target="_blank"><i class="fab fa-instagram"></i><span class="follow-request"> Follow Us On Instagram!</span></a>
+            </div>
+            <div class="branding">
+                <p>SBDroneLife&copy;</p>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="assets/scripts/overlayMove.js"></script>
+        <script src="assets/scripts/index.js"></script>
+    </body>
 </html>

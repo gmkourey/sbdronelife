@@ -25,27 +25,27 @@
 
 #videoContainer {
     padding: 0px;
-    /* position: relative; */
-    height:85vh;
-    overflow:hidden;
+    height: 550px;
+    background-image: url("../images/background-image.jpg");
+    background-size: cover;
 }
 
-video {
-    position:relative;
-    top:-200px;
-    object-fit: fill;
-    width: 100vw;
-}
+    /* video {
+        position:relative;
+        top:-200px;
+        object-fit: fill;
+        width: 100vw;
+    } */
 
 .overlay {
     position: absolute;
-    width: 40vw;
+    width: 500px;
     background-color: rgba(0,0,0,0.55);
     color:white;
     padding: 50px 30px;
     border-radius: 5px;
-    top: 15vw;
-    left:10vw;
+    top: 200px;
+    left: 150px;
     margin: 0 auto;
     border: solid 1.5px rgb(100,100,100);
 }
@@ -83,6 +83,7 @@ video {
     background-color: rgb(146,220,150) !important;
     border: solid 1px rgb(146,220,150) !important;
     color: white !important;
+    margin-top: 25px;
 }
 
 .btn-primary {
@@ -92,7 +93,7 @@ video {
 }
 
 .card-img-top {
-    height: 16vw;
+    height: 225px;
 }
 
 .faaLicensed {
@@ -133,7 +134,7 @@ iframe {
 
 .photoCover {
     width: 100%;
-    height: 25vh;   
+    height: 30vh;   
     margin: 0 auto;
 }
 
@@ -178,81 +179,40 @@ a:hover {
     color:white;
 }
 
+/* iPad Pro Landscape*/
 @media (max-width: 1367px) {
-    #videoContainer {
-        height: 60vh;
+    .overlay {
+        left: 100px;
     }
 
-    video {
-        top: -100px;
+    .photoCover {
+        height: 250px;
     }
+
 }
 
-@media (max-width: 1025px) and (orientation: portrait) {
+/* iPad Pro portrait or iPad landscape*/
+@media (max-width: 1025px) {
     .photoCover {
-        height: 16vh;
+        height: 200px;
     }
 
     .overlay h3 {
         font-size: 20px;
     }
 
-    #videoContainer {
-        height: 38vh;
-    }
-
-    video {
-        top: 0;
-    }
 }
 
-@media (max-width: 1025px) and (orientation: landscape) {
-    #videoContainer {
-        height: 60vh;
-    }
-}
-
-@media (max-width: 991px) {
+/* Breakpoint for Bootstrap where Nav turns into button */
+@media (max-width: 992px) {
     .navbar-nav {
         position: static;
     }
 
-    #FAA {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .faaLicensed {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    #videoContainer {
-        height: 75vh;
-    }
-
-    .overlay .display-4 {
-        font-size: 20px;
-    }
-
-    .overlay h3 {
-        font-size: 15px;
-    }
-
-    .btn-light {
-        padding: 10px;
-        margin-top: 15px;
-    }
-
-    .overlay {
-        padding: 10px;
-    }
 }
 
-@media (max-width: 813px) and (max-width: 376) {
-    #videoContainer {
-        height: 100vh;
-    }
+/* iPhone X landscape */
+@media (max-width: 813px) {
 
     .overlay .display-4 {
         font-size: 35px;
@@ -264,7 +224,6 @@ a:hover {
 
     .overlay {
         padding: 20px;
-        background-color: blue;
     }
 
     .btn-light {
@@ -274,26 +233,38 @@ a:hover {
     .photoCover {
         height: 35vh;
     }
+
+    .card-img-top {
+        height: 150px;
+    }
 }
 
+/* iPad portrait */
 @media (max-width: 769px) {
     .display-4 {
         font-size: 40px;
     }
 
     .overlay {
+        width: 350px;
         top: 175px;
+        left: 75px;
+        padding: 20px;
     }
 
+    .card-img-top {
+        height: 175px;
+    }
     .photoCover {
-        height: 20vh;
+        height: 150px;
     }
 
     #videoContainer {
-        height: 37vh;
+        height: 500px;
     }
 }
 
+/* iPhone 6/7/8 landscape */
 @media (max-width: 668px) {
     .display-4 {
         font-size: 30px;
@@ -313,46 +284,50 @@ a:hover {
     }
 
     .photoCover {
-        height: 50vh;
-        width: 60vw;
+        height: 200px;
+        width: 350px;
     }
 
     #videoContainer {
-        height: 78vh;
+        height: 300px;
     }
 
     .faaLogo {
-        display: none;
-    }
-
-    .overlay {
-        padding: 10px;
-    }
-
-    .card-img-top {
-        height: 50vh;
+        height: 125px;
+        margin-bottom: 20px;
     }
 
     .card {
-        margin-bottom: 20px;
+        width: 350px;
+        margin: 0 auto 20px auto;
+    }
+
+    .card-img-top {
+        height: 200px;
     }
 }
 
+/* iPhones vertical */
 @media (max-width: 376px) {
     #videoContainer {
-        height: 25vh;
+        height: 300px;
     }
 
     .photoCover {
-        height: 22vh;
+        width: 300px;
+        margin: 0 auto;
+        height: 165px;
     }
 
     .overlay .display-4 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .overlay {
         top: 125px;
+        width: 200px;
+        padding: 10px;
+        left: 25px;
     }
 
     .overlay h3 {
@@ -360,11 +335,16 @@ a:hover {
         margin-bottom: 0px;
     }
 
-    .btn-primary {
-        font-size: 12px;
+    .btn-light {
+        font-size: 12px !important;
+        padding: 5px;
     }
     
     .card-img-top {
-        height: 35vh;
+        height: 175px;
+    }
+    
+    .card {
+        width: 275px;
     }
 }
